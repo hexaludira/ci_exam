@@ -53,6 +53,8 @@
 		<?= form_close(); ?>
 
 		<a href="<?=base_url()?>auth/forgot_password" class="text-center"><?= lang('login_forgot_password');?></a>
+		<br/>
+		<a href="<?=base_url()?>auth/register" class="text-center">Register Now to Take Exam!</a>
 
 	</div>
 </div>

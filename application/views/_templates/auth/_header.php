@@ -20,6 +20,8 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="<?=base_url()?>assets/bower_components/jquery/jquery-3.3.1.min.js"></script>
+    <script src="<?=base_url()?>assets/bower_components/sweetalert2/sweetalert2.all.min.js"></script>
     <script src="<?=base_url()?>assets/bower_components/select2/js/select2.full.min.js"></script>
+
 </head>
 <body class="hold-transition login-page">

@@ -36,16 +36,17 @@
 
 	<div class="box-body">
         <div class="row">
-            <div class="col-md-6">
-                <?=form_open('register/save', array('id'=>'reg_employee'), array('method'=>'add'))?>
+            <?=form_open('register/save', array('id'=>'reg_employee'), array('method'=>'add'))?>
+                <div class="col-md-6">
+                
                     <div class="form-group">
-                        <label for="nim">NIM</label>
-                        <input autofocus="autofocus" onfocus="this.select()" placeholder="Std ID" type="text" name="nim" class="form-control">
+                        <label for="nim">Employee ID</label>
+                        <input autofocus="autofocus" onfocus="this.select()" placeholder="Employee ID" type="text" name="nim" class="form-control">
                         <small class="help-block"></small>
                     </div>
                     <div class="form-group">
                         <label for="nama">Name</label>
-                        <input placeholder="Student's Name" type="text" name="nama" class="form-control">
+                        <input placeholder="Employee Name" type="text" name="nama" class="form-control">
                         <small class="help-block"></small>
                     </div>
                     <div class="form-group">
@@ -53,8 +54,8 @@
                         <input placeholder="Email" type="email" name="email" class="form-control">
                         <small class="help-block"></small>
                     </div>
-            </div>
-            <div class="col-md-6">
+                </div>
+                <div class="col-md-6">
                     <div class="form-group">
                         <label for="jenis_kelamin">Gender</label>
                         <select name="jenis_kelamin" class="form-control select2">
@@ -82,8 +83,8 @@
                         <button type="reset" class="btn btn-flat btn-default"><i class="fa fa-rotate-left"></i> Reset</button>
                         <button type="submit" id="submit" class="btn btn-flat bg-purple"><i class="fa fa-save"></i> Save</button>
                     </div>
-                <?=form_close()?>
-            </div>
+                </div>
+            <?=form_close()?>
         </div>
     </div>
 </div>

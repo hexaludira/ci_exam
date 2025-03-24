@@ -44,7 +44,7 @@ $(document).ready(function () {
         load_kelas($(this).val());
     });
 
-    $('form#mahasiswa input, form#mahasiswa select').on('change', function () {
+    $('form#reg_employee input, form#reg_employee select').on('change', function () {
         $(this).closest('.form-group').removeClass('has-error has-success');
         $(this).nextAll('.help-block').eq(0).text('');
     });
@@ -53,7 +53,7 @@ $(document).ready(function () {
         $(this).parent().nextAll('.help-block').eq(0).text('');
     });
 
-    $('form#mahasiswa').on('submit', function (e) {
+    $('form#reg_employee').on('submit', function (e) {
         e.preventDefault();
         e.stopImmediatePropagation();
 
@@ -67,13 +67,13 @@ $(document).ready(function () {
             success: function (data) {
                 btn.removeAttr('disabled').text('Save');
                 if (data.status) {
-                    Swal({
+                    Swal.fire({
                         "title": "Success",
-                        "text": "Data Saved Successfully",
+                        "text": "User created successfully. Employee ID is used as a password at login.",
                         "type": "success"
                     }).then((result) => {
                         if (result.value) {
-                            window.location.href = base_url+'mahasiswa';
+                            window.location.href = base_url+'Auth';
                         }
                     });
                 } else {
